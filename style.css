@@ -1,0 +1,227 @@
+body{
+    background-color: rgb(237, 237, 237);
+ padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(121, 121, 121);
+}
+nav{
+    border-bottom: 0.3rem solid #F9A826;
+
+}
+.nav{
+
+
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    margin-right: 1rem;
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+}
+.logo{
+   
+    width: 9rem;
+    height: 1.35rem;
+}
+
+.search_icon{
+    height: 1rem;
+    opacity: 0.4;
+    margin-right: 0.3rem;
+}
+.searchbar{
+    
+    display: flex;
+align-items: center;
+border: 2px solid rgb(121, 121, 121);
+padding: 0.2rem;
+justify-content: start;
+width: 15rem;
+border-radius: 0.3rem;
+margin-left: 2rem;
+
+}
+.input{
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    color: rgb(121, 121, 121);
+}
+.input::placeholder{
+    color: gray;
+}
+.input:focus{
+    outline: none;
+}#signin-btn{
+    border: none;
+
+opacity: 0.7;
+
+margin-left: 0.3rem;
+
+transition: transform 0.3s ease-in-out;
+}
+
+#signin-btn:hover{
+   opacity: 1;
+ }   
+  main{
+    width: 80%;
+    margin: auto;
+} 
+ .avatar{
+    width: 1rem;
+  }
+  .hero{
+    width: 50%;
+  }
+  .main-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10rem;
+  } h1{
+    color: #F9A826;
+    font-size: 280%;
+  }
+  .main-right{
+    width: 40%;
+    min-width: 20rem;
+  }
+
+  .main-par{
+    font-size: 140%;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.card{
+ height: 17rem;
+ width: 20%;
+ padding: 1rem;
+ margin: 2.5%;
+ border-radius: 0.5rem;
+box-sizing: border-box;
+ box-shadow: 1px 15px 30px 0px rgba(134,134,134,0.46);
+ transition: transform 0.3s ease-in-out;
+
+}
+.card_top{
+    display: flex;
+    flex-direction: row;
+align-items: center;
+justify-content: start;    
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+
+    
+}
+.img_entreprise{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+
+/* Popup container styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+  }
+  
+  /* Popup content styles */
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    height: 20rem;
+    background-color: rgb(237, 237, 237);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: right;
+    color: rgb(121, 121, 121);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Close button styles */
+  #close-btn {
+    opacity: 0.5;
+    height: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+ 
+  }
+  #close-btn:hover{
+    opacity: 1;
+  }
+.signin-title{
+    margin: 0;
+}
+  /* Show the popup when the trigger button is clicked */
+  .show {
+    display: block;
+  }
+  .container-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: left;
+    position: relative;
+    width: 100%;
+  }
+  .email{
+    margin: 1rem 0;
+  }
+  #email:focus{
+    outline: none;
+}
+#password:focus{
+    outline: none;
+}
+  .password{
+    margin: 1rem 0;
+  }
+  .submit-btn{
+    background-color:#F9A826;
+    color: rgb(237, 237, 237);
+    border: none;
+    border-radius: 0.3rem;
+    height: 1.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+
+  }
+ 
