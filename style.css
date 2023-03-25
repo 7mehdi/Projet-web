@@ -6,7 +6,12 @@ body{
 }
 nav{
     border-bottom: 0.3rem solid #F9A826;
-
+position: fixed;
+    top: 0;
+left: 50%;
+transform: translateX(-50%);
+    width: 90%;
+    margin: auto;
 }
 .nav{
 
@@ -25,11 +30,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-a{
-    margin-right: 1rem;
-    text-decoration: none;
-    color: rgb(121, 121, 121);
-}
+
 .logo{
    
     width: 9rem;
@@ -183,6 +184,28 @@ justify-content: start;
     right: 0;
  
   }
+  a {
+    position: relative;
+    color: rgb(121, 121, 121);
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(121, 121, 121);
+    transition: width 0.2s ease-out;
+  }
+  
+  a:hover::before {
+    width: 100%;
+  }
+  
   #close-btn:hover{
     opacity: 1;
   }
