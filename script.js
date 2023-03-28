@@ -26,3 +26,12 @@ submitBtn.addEventListener('click', (event) => {
   // ...
 });
 });
+const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+
+wishlistBtns.forEach(btn => {
+  
+  btn.addEventListener('click', () => {
+    console.log("bonjour")
+    btn.querySelector('i').classList.toggle('fas');
+  });
+});

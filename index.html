@@ -12,29 +12,52 @@
     <link rel="stylesheet" href="style.css">
     <script src="/script.js"></script>
     <script src="https://kit.fontawesome.com/d9d05331ec.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="/manifest.json">
+    <script>
+        window.addEventListener('load',() =>
+                { if("serviceWorker" in navigator){
+                    navigator.serviceWorker.register('/sw.js') }
+    })
+
+    </script>
+
 </head>
 
 <body>
     <nav>
         <div class="nav">
-            <div style="display: flex;align-items: center;">
+
             <img class="logo" src="/assets/Internlink.png" alt="Logo" />
+
+
+
+            <!--Search bar
+            
             <div class="searchbar"><img class="search_icon" src="assets/magnifying-glass-solid.svg" alt="">
                 <input class="input" type="text" placeholder="Find an opportunity..">
-            </div></div>
+      -->
+
+
+
+
             <div class="navLinks">
                 <ul>
-                    <a href="/html.html">About</a>
-                    <a href="">Contact</a>
+                    <a href="#about-us">About Us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="/internships.html">Find internships</a>
+                    <a href="/pilotes.html">Pilotes</a>
+
                 </ul>
-                
-                    <i class="fa fa-user" id="signin-btn"></i>
-                
+
+                <i class="fa fa-user" id="signin-btn"></i>
+
             </div>
 
         </div>
     </nav>
     <main>
+
+
         <div class="main-top">
             <div class="main-right">
                 <h1 class="title">Where Talent Meets Opportunity</h1>
@@ -47,18 +70,104 @@
         </div>
 
 
-        <!--  -->
-        <div class="container">
-           <div class="card">
-                <div class="card_top"> <img class="img_entreprise"
-                        src="assets/nguyen-dang-hoang-nhu-HHs_PrvxSQk-unsplash (1).jpg" alt="">
-                    <h3 class="nom_entreprise">Entreprise 1</h3>
+
+        <div class="testimonials container">
+            <div class="card">
+                <div class="person">
+                    <img class="test-image" src="https://randomuser.me/api/portraits/women/72.jpg"
+                        alt="Testimonial Image" class="round">
+                    <div class="test-info">
+                        <h3>Jane Doe</h3>
+                        <span>Marketing Intern</span>
+                    </div>
                 </div>
-                <p class="info">Secteur:</p>
-                <p class="info">Secteur:</p>
-                <p class="info">Secteur:</p>
-                <p class="info">Secteur:</p>
+                <div class="test-text">
+                    <p>"I never realized how valuable an internship could be until I had the opportunity to participate
+                        in one. Through my internship, I gained hands-on experience and developed skills that I couldn't
+                        have learned in the classroom. It also helped me build my professional network and opened doors
+                        for future job opportunities. I highly recommend internships to anyone looking to kick-start
+                        their career."</p>
+
+                </div>
             </div>
+            <div class="card">
+                <div class="person">
+                    <img class="test-image" src="https://randomuser.me/api/portraits/women/21.jpg"
+                        alt="Testimonial image" class="round">
+                    <div class="test-info">
+                        <h3>Emily Rodriguez</h3>
+                        <span>Marketing Intern at ABC Company</span>
+                    </div>
+                </div>
+                <div class="test-text">
+                    <p>"Interning with ABC Company was an eye-opening experience that taught me the importance of
+                        networking and communication skills in the workplace. I am grateful for the opportunity and
+                        highly recommend internships to anyone looking to gain practical experience."</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="person">
+                    <img class="test-image" src="https://randomuser.me/api/portraits/men/65.jpg" alt="Testimonial image"
+                        class="round">
+                    <div class="test-info">
+                        <h3>John Lee</h3>
+                        <span>Software Engineering Intern at XYZ Corporation</span>
+                    </div>
+                </div>
+                <div class="test-text">
+                    <p>"As an intern at XYZ Corporation, I was given the opportunity to work on real projects and learn
+                        from experienced professionals in the industry. It was an invaluable experience that allowed me
+                        to grow both personally and professionally."</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="person">
+                    <img class="test-image" src="https://randomuser.me/api/portraits/women/55.jpg"
+                        alt="Testimonial image" class="round">
+                    <div class="test-info">
+                        <h3>Samantha Patel</h3>
+                        <span>Business Operations Intern at LMN Industries</span>
+                    </div>
+                </div>
+                <div class="test-text">
+                    <p>"Interning at LMN Industries allowed me to see the inner workings of a successful company and
+                        learn about various aspects of business operations. It was a great way to gain practical
+                        experience and prepare for a career in the field."</p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- about us section -->
+<div class="division"></div>
+
+
+        <a name="about-us"></a>
+        <section class="about-us">
+            <h1>About Us</h1>
+            <p>We are a team of passionate individuals who believe in the power of internships to transform lives and
+                launch careers.</p>
+            <p>Our mission is to connect students and young professionals with internship opportunities that match their
+                interests and career goals. We believe that internships provide invaluable real-world experience,
+                networking opportunities, and skill-building that can help jumpstart a successful career.</p>
+            <p>Our team is made up of experienced professionals from a variety of industries, including software
+                engineering, marketing, finance, and more. We have all been through the internship process ourselves and
+                understand the challenges and opportunities that come with it.</p>
+            <p>Through our website, we aim to make the internship search process as easy and efficient as possible. Our
+                platform offers a variety of internships across different industries and locations, and we work closely
+                with our partner companies to ensure that each internship provides a valuable learning experience for
+                our users.</p>
+            <p>Thank you for choosing our website to help guide you on your internship journey. We look forward to
+                helping you find your dream internship and launching your career!</p>
+        </section>
+
+
+
+        <div class="container">
 
 
 
@@ -72,24 +181,58 @@
             <div id="signin-popup" class="popup">
                 <div class="popup-content">
                     <div class="container-popup">
-                    <img id="close-btn" src="/assets/xmark-solid.svg" alt="">
-                    <h2 class="signin-title">Sign In</h2>
-                    <form class="signin-form">
-                        <div class="email">
-                        <label for="email">Email</label><img class="avatar" src="/assets/user.png" alt="">
+                        <img id="close-btn" src="/assets/xmark-solid.svg" alt="">
+                        <h2 class="signin-title">Sign In</h2>
+                        <form class="signin-form">
+                            <div class="email">
+                                <label for="email">Email</label><img class="avatar" src="/assets/user.png" alt="">
 
-                        <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="password">
-                        <label for="password">Password</label>
-                        <img class="avatar" src="/assets/padlock.png" alt="">
-                        <input type="password" id="password" name="password" required></div>
-                        <button class="submit-btn" type="submit">Submit</button>
-                    </form>
-</div>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="password">
+                                <label for="password">Password</label>
+                                <img class="avatar" src="/assets/padlock.png" alt="">
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <button class="submit-btn" type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
     </main>
+
+
+
+    <a name="contact"> </a>
+        <footer>
+            <div class="container-footer">
+                <div class="row">
+                    <div class="col-4">
+                        <h4>Contact Us</h4>
+                        <ul class="contact">
+                            <li><i class="fa fa-map-marker"></i> 60 rue du Kadous Tixeraine BIRKHADEM ALGER.، 60 CW 116,
+                                Birkhadem</li>
+                            <li><i class="fa fa-phone"></i> 021 40 55 00</li>
+                            <li><i class="fa fa-envelope"></i> info@yourwebsite.com</li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-house">
+                    <div class="col-4">
+                        <h4>Follow Us</h4>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/ExiaAlgerie"target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/AlgerieCesi"target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/exiacesialgerie/"target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/cesi-alg-rie/"target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy; 2023 InternLink. All Rights Reserved.</p>
+            </div>
+        </footer>
+   
 </body>
 
 </html>
